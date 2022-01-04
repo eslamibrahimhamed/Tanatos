@@ -1,0 +1,634 @@
+/*Start Main Rulz*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+img {
+  opacity: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/*End Main Rulz*/
+
+/*Start Header*/
+
+.header {
+  position: relative;
+  background: url("../images/header.jpg");
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+.header .overlay {
+  background-color: rgba(58, 64, 69, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header .navbar {
+  display: flex;
+  overflow: hidden;
+  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+}
+
+.header .navbar .brand {
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+.header .navbar .menu {
+  color: #e2e2e2;
+}
+
+.header .navbar .menu i {
+  padding-left: 10px;
+  vertical-align: -3px;
+}
+
+.header .intro h1 {
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.header .intro p {
+  line-height: 1.4;
+  font-size: 19px;
+  margin: 10px 0 50px 0;
+  color: #e2e2e2;
+}
+
+.header .buttons button {
+  background: transparent;
+  padding: 10px 0;
+  width: 160px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  margin: 0 10px;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.header .buttons button:hover {
+  background-color: #f7600e;
+  color: #fff;
+  border: 1px solid #f7600e;
+  cursor: pointer;
+}
+
+.header .arrow {
+  bottom: 40px;
+  position: absolute;
+}
+
+.header .arrow i {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 7px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .arrow i:hover {
+  background-color: #f7600e;
+  border: 1.5px solid #f7600e;
+}
+
+/*End Header*/
+
+/* Start Features */
+
+.features {
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.features .container {
+  display: flex;
+}
+
+.features .box {
+  width: 25%;
+}
+
+.features .box i {
+  color: #f7600e;
+  border: 1.5px solid #aaa;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.features .box i:hover {
+  background-color: #f7600e;
+  color: #fff;
+  border: 1.5px solid #f7600e;
+}
+
+.features .box h4 {
+  color: #3b434c;
+  font-weight: normal;
+}
+
+.features .box p {
+  color: #7e8286;
+  line-height: 1.6;
+  font-size: 14px;
+}
+/* End Features */
+
+/*Start Subscribe*/
+
+.subscribe {
+  background: url("../images/subscribe.jpg");
+  position: relative;
+  height: 250px;
+  background-size: 100% 100%;
+}
+
+.subscribe .overlay {
+  background-color: rgba(58, 64, 69, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe form {
+  padding: 100px 0;
+}
+
+.subscribe form input[type="email"] {
+  width: 565px;
+  height: 50px;
+  padding: 0 0 0 25px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.subscribe form button {
+  width: 270px;
+  height: 50px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f7600e;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.subscribe form button:hover {
+  color: #000;
+}
+
+/*End Subscribe*/
+
+/* Start Our Works */
+
+.our-works {
+  padding: 80px 0;
+  margin-top: 1px;
+}
+
+.our-works .container > h1 {
+  color: #3b434c;
+  font-size: 35px;
+}
+
+.our-works .container > p {
+  color: #7e8286;
+  margin-bottom: 100px;
+  line-height: 1.7;
+}
+
+.our-works .row {
+  overflow: hidden;
+  display: flex;
+}
+
+.our-works .row > div {
+  position: relative;
+  width: 33.3333%;
+  margin: 0.5%;
+}
+
+.our-works .row > div .overlay {
+  position: absolute;
+  background-color: rgba(247, 96, 14, 0.7);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-works .row > div:hover .overlay {
+  opacity: 1;
+}
+
+.our-works .row > div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 10px 10px 6px -5px #ccc;
+}
+
+.our-works .row > div .overlay h2 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 28px;
+  margin-top: 70px;
+}
+
+.our-works .row > div .overlay p {
+  color: #fff;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
+.our-works .row > div .overlay button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 15px 45px;
+  transition: all 0.5s ease-in-out;
+}
+.our-works .row > div .overlay button:hover {
+  background-color: #fff;
+  color: #f7600e;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.our-works .container > button {
+  border: 1px solid #aaa;
+  background-color: transparent;
+  color: #3b434c;
+  border-radius: 10px;
+  padding: 15px 45px;
+  margin: 70px 0 30px 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-works .container > button:hover {
+  background-color: #f7600e;
+  color: #fff;
+  border: 1px solid #f7600e;
+}
+
+.our-works .hidden {
+  height: 0;
+  opacity: 0;
+}
+
+/* End Our Works */
+
+/* Start Testimonials*/
+.testimonials {
+  position: relative;
+  height: 450px;
+  background: url("../images/testim.jpg");
+  background-size: 100% 100%;
+}
+
+.testimonials .overlay {
+  background-color: rgba(58, 64, 69, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .client {
+  margin-top: 80px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.testimonials .client img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 10px 0px;
+  opacity: 1;
+}
+
+.testimonials .client p {
+  line-height: 1.7;
+  padding: 20px 0 30px;
+  color: #d8d9d9;
+  font-style: italic;
+}
+
+.testimonials .client span {
+  color: #d8d9d9;
+  font-family: sans-serif;
+}
+
+.testimonials .fa-chevron-right,
+.testimonials .fa-chevron-left {
+  position: absolute;
+  top: 45%;
+  color: #7a7f83;
+}
+
+.testimonials .fa-chevron-right:hover,
+.testimonials .fa-chevron-left:hover {
+  color: #f7600e;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.testimonials .fa-chevron-right {
+  right: 90px;
+}
+
+.testimonials .fa-chevron-left {
+  left: 90px;
+}
+
+.testimonials .hidden {
+  display: none;
+}
+
+/* End Testimonials*/
+
+/* Start Our Team */
+.our-team {
+  padding: 50px 0;
+}
+
+.our-team h1 {
+  color: #3b434c;
+  font-size: 35px;
+}
+
+.our-team .container > p {
+  color: #7e8286;
+  line-height: 1.7;
+  margin-bottom: 100px;
+}
+
+.our-team .team {
+  display: flex;
+}
+
+.our-team .team .person {
+  width: 23%;
+  margin-left: 2%;
+  color: #9da1a5;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-team .team .person:hover {
+  color: #3b434c;
+}
+
+.our-team .team .person:hover img {
+  filter: none;
+}
+
+.our-team .team .person img:hover {
+  border-bottom: 4px solid #f7600e;
+  border-radius: 5% 5% 2% 2%;
+  transform: translateY(-14px) scale(1.1, 1.1);
+}
+
+.our-team .team .person:hover .fa-facebook-f {
+  background-color: #205b9f;
+}
+
+.our-team .team .person:hover .fa-twitter {
+  background-color: #00ace3;
+}
+
+.our-team .team .person:hover .fa-google-plus-g {
+  background-color: #ff3921;
+}
+
+.our-team .team .person img {
+  width: 255px;
+  height: 290px;
+  border: 1px solid #ccc;
+  border-radius: 5%;
+  box-shadow: 4px 4px 15px 0px;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-team .team h4 {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 25px 0 15px 0;
+}
+
+.our-team .team .icon i {
+  background-color: #9da1a5;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px 1px 5px 0;
+  margin: 10px 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.our-team .team p {
+  line-height: 1.7;
+}
+
+/* End Our Team */
+
+/* Start Say Hello */
+.say-hello {
+  position: relative;
+  display: flex;
+  background: url("../images/say-hello.jpg");
+  background-size: 100% 100%;
+  height: 680px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.say-hello .overlay {
+  position: absolute;
+  background-color: rgba(58, 64, 69, 0.9);
+  width: 100%;
+  height: 100%;
+}
+.say-hello h1 {
+  margin-top: 50px;
+}
+.say-hello p {
+  line-height: 1.7;
+  margin-bottom: 80px;
+}
+
+.say-hello form input[type="email"],
+.say-hello form input[type="text"] {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  width: 400px;
+  height: 50px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.say-hello form textarea {
+  resize: none;
+  width: 825px;
+  height: 200px;
+  padding: 20px;
+  margin: 30px 0px 0px 20px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.say-hello .contact {
+  display: flex;
+  margin-top: 40px;
+}
+.say-hello .contact button {
+  flex-grow: 1;
+  text-align: left;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.say-hello .contact button span {
+  position: absolute;
+  background-color: #f7600e;
+  border: 1px solid #f7600e;
+  border-radius: 10px;
+  padding: 10px 50px;
+  left: 16.5%;
+}
+
+.say-hello .contact .icon {
+  position: absolute;
+  right: 15%;
+}
+
+.say-hello .contact .icon i {
+  border-radius: 50%;
+  border: transparent;
+  padding: 7px 1px 5px 0;
+  margin: 3px 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.say-hello .contact .icon .fa-facebook-f {
+  background-color: #205b9f;
+}
+
+.say-hello .contact .icon .fa-twitter {
+  background-color: #00ace3;
+}
+
+.say-hello .contact .icon .fa-google-plus-g {
+  background-color: #ff3921;
+}
+
+.say-hello .contact .icon .fa-dribbble {
+  background-color: #ff72a5;
+}
+
+.say-hello .contact .icon .fa-behance {
+  background-color: #009bd5;
+}
+
+/* End Say Hello */
+
+/* Start Footer */
+.footer {
+  background-color: #3b434c;
+  height: 100px;
+  padding: 45px 0;
+}
+
+.footer .container {
+  display: flex;
+  width: 1000px;
+}
+
+.footer .copyright {
+  color: #b1b5b8;
+  flex-grow: 1;
+}
+.footer .by {
+  color: #b1b5b8;
+}
+.footer .by::after {
+  content: " ESLAM IBRAHEEM";
+  color: #b1b5b8;
+  font-weight: bold;
+}
+/* End Footer */
+
+/*Start My FrameWork*/
+
+.text-center {
+  text-align: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.main-color {
+  color: #f7600e;
+}
+
+.main-background {
+  background-color: #f7600e;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  color: #000;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top i:hover {
+  color: #f7600e;
+  transition: all 0.6s ease-in-out;
+}
+
+/*End My FrameWork*/
